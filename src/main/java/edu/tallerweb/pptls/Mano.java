@@ -6,7 +6,6 @@ package edu.tallerweb.pptls;
 public class Mano {
 	private Resultado[][] resultadoJuego = new Resultado[5][5];
 	private Forma forma;
-	
 	/**
 	 * Toda Mano debe crearse con una forma dada, que será
 	 * la que determine su condición en el juego.
@@ -14,7 +13,6 @@ public class Mano {
 	 */
 	public Mano(final Forma forma) {
 		this.forma = forma;
-		
 		resultadoJuego[Forma.LAGARTO.getValor()][Forma.PAPEL.getValor()] = Resultado.GANA;
 		resultadoJuego[Forma.LAGARTO.getValor()][Forma.SPOCK.getValor()] = Resultado.GANA;
 		resultadoJuego[Forma.PAPEL.getValor()][Forma.PIEDRA.getValor()] = Resultado.GANA;
